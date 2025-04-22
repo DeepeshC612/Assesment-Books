@@ -74,10 +74,12 @@ assignment-app/
 - **POST /auth/signup** - Register a new user
 - **POST /auth/login** - User login
 
-### Reviews
-- **GET /reviews** - Get all reviews
-- **POST /reviews** - Add a new review
-- **PUT /reviews/:id/like** - Like/Dislike a review
+### Books
+- **GET /books** - Get all Books
+- **POST /books** - Add a new book
+- **GET /books/:id** - Get a book
+- **PUT /books/:id** - Update a book
+- **DELETE /books/:id** - Delete a book
 
 ## Logging
 This application uses Winston for logging. Logs are stored and rotated daily in `logs/`.

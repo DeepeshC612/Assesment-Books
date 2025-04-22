@@ -1,25 +1,21 @@
 import mongoose from "mongoose";
 
-const companySchema = new mongoose.Schema({
-  companyName: {
+const bookSchema = new mongoose.Schema({
+  title: {
     type: String,
     required: true,
   },
-  companyLocation: {
+  author: {
     type: String,
     required: true,
   },
-  foundedOn: {
+  year: {
     type: Date,
     required: true,
   },
-  companyCity: {
+  genre: {
     type: String,
     required: true,
-  },
-  companyPic: {
-    type: String,
-    // required: true,
   },
   userId: {
     type: mongoose.Types.ObjectId,
@@ -30,6 +26,6 @@ const companySchema = new mongoose.Schema({
     type: Boolean,
   },
 });
-companySchema.set("timestamps", true);
+bookSchema.set("timestamps", true);
 
-export default mongoose.model("companyData", companySchema);
+export default mongoose.model("bookData", bookSchema);
